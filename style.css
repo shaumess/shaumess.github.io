@@ -1,0 +1,657 @@
+/* Universal CSS Settings Begin */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        /* Stack the columns on top of each other */
+    }
+}
+
+a {
+    cursor: url(./images/mickey_hand-2.png), auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Universal CSS Settings End */
+
+/* Body Background CSS Begin*/
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+#techMov {
+    position: fixed;
+    /* Fixed position to make it stay in place during scroll */
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+/* Body Background CSS End */
+
+/* Content CSS Begin */
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Content CSS End */
+
+/* Header CSS Begin */
+.header {
+    background-color: white;
+    ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.name-box {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: 5rem;
+}
+
+#homeIcon {
+    width: 30px;
+}
+
+.my-name {
+    margin-left: 1rem;
+}
+
+.nav-box {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    margin-right: 5rem;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    margin-left: 1rem;
+    margin-left: 1rem;
+    font-size: 20px;
+}
+
+/* Header CSS End */
+
+/* Job Title CSS Begin */
+.job-title-row {
+    background-color: transparent;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.shaun-pic-box {
+    height: auto;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.shaun-pic {
+    width: 350px;
+}
+
+.job-title-box {
+    height: auto;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.quote {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.software-dev-text {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 1rem;
+}
+
+.languages-text {
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+.ed-career-text {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* Job Title CSS End */
+
+/* About CSS Begin */
+#aboutMeRow {
+    background-color: #266392;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-me-box {
+    width: 75%;
+    height: 500px;
+    margin: 3rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-me-h1 {
+    color: white;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 2rem;
+}
+
+.scrollbox {
+    width: 100%;
+    height: 400px;
+    overflow-y: scroll;
+    padding: 15px;
+    border: 2px solid #ccc;
+    line-height: 1.5;
+}
+
+.pic-box {
+    width: 25%;
+    height: 450px;
+    margin: 5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#slideshow {
+    position: relative;
+    width: 100%;
+    /* Slideshow width */
+    height: 400px;
+    /* Slideshow height */
+    overflow: hidden;
+    /* Hide the non-active slides */
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s;
+    /* Smooth transition for fading */
+}
+
+.active {
+    opacity: 1;
+    /* Only the active slide is visible */
+}
+
+.demo-pic {
+    border-radius: 5%;
+}
+
+/* About CSS End */
+
+/* Portfolio CSS Begin */
+#portfolioRow {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+.myport-text-row {
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.myport-h1 {
+    font-size: 35px;
+}
+
+.port-rows {
+    display: flex;
+    justify-content: center;
+}
+
+#program-basics {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#program-basics:hover {
+    transform: scale(1.5);
+}
+
+#web-develop {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#web-develop:hover {
+    transform: scale(1.5);
+}
+
+#python {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#python:hover {
+    transform: scale(1.5);
+}
+
+#javascript {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#javascript:hover {
+    transform: scale(1.5);
+}
+
+#java {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#java:hover {
+    transform: scale(1.5);
+}
+
+#projects {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#projects:hover {
+    transform: scale(1.5);
+}
+
+#instructDesign {
+    width: 200px;
+    height: 150px;
+    margin: 3rem;
+    transition: transform 0.3s ease;
+}
+
+#instructDesign:hover {
+    transform: scale(1.5);
+}
+
+/* Portfolio CSS End */
+
+/* Bootcamp CSS Begin */
+#bootcampRow {
+    background-color: transparent;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bootcamp-text-row {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.bootcamp-h1 {
+    color: white;
+    font-size: 35px;
+}
+
+.bootcamp-desc-row {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.coding-dojo-pic {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.bootcamp-text-box {
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    margin-right: 5rem;
+}
+
+.bootcamp-text {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.bootcamp-resource-row {
+    width: auto;
+    height: auto;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.coding-dojo-link {
+    color: white;
+    font-size: 12px;
+}
+
+/* Bootcamp CSS End */
+
+/* Skills CSS Begin */
+#skillsRow {
+    background-color: #266392;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-title-row {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skills-title-text {
+    color: white;
+}
+
+.sub-skills-row {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.skills-text {
+    text-align: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+/* Skills CSS End */
+
+/* Education CSS Begin */
+#educationRow {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.education-title-row {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.education-text-h1 {
+    color: black;
+}
+
+.school-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+    margin-right: 25rem;
+}
+
+.school-logo-box {
+    margin-left: 25rem;
+    margin-right: 3rem;
+}
+
+.school-descr-box {
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+.school-h1 {
+    margin-bottom: 10px;
+}
+
+.major-h2 {
+    margin-bottom: 10px;
+}
+
+.city-h3 {
+    margin-bottom: 20px;
+}
+
+.school-ach {
+    color: black;
+    margin-bottom: 10px
+}
+
+/* Education CSS End */
+
+/* Experience CSS Begin */
+#experienceRow {
+    background-color: transparent;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-title-row {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.experience-text-h1 {
+    color: white;   
+}
+
+.job-row {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 3rem;
+    margin-right: 25rem;
+}
+
+.job-logo-box {
+    margin-left: 25rem;
+    margin-right: 3rem;
+}
+
+.job-descr-box {
+    height: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+}
+
+.job-h1 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.job-title-h2 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+.city-date-h3 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.job-description {
+    color: white;
+    margin-bottom: 10px;
+}
+/* Experience CSS End */
+
+/* Contact CSS Begin */
+#contactRow {
+    background-color: #266392;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    height: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-title-row {
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.contact-text-h1 {
+    color: white;
+}
+
+.contact-icon-row {
+    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-icon {
+    margin-left: 25rem;
+}
+
+.acrobat-icon {
+    margin-right: 25rem;
+}
+
+.copyright-row {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.copyright-text {
+    color: white;
+    font-size: 16px;
+}
+/* Contact CSS End */
